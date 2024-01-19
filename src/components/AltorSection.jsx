@@ -31,7 +31,9 @@ function AltorSection() {
           {altorInfo[visibleSection].description}
         </p>
         <button className="font-[400] text-lg bg-[#4240b1] px-4 text-white rounded-md">
-          See more
+          <a href="https://youtu.be/ly0QqF4qs_4" target="_blank">
+            See more
+          </a>
         </button>
         <div className=" flex gap-2  py-5 md:p-10 overflow-auto">
           <ButtonStack content="React Js" />

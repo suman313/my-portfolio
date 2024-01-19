@@ -56,16 +56,23 @@ function Home() {
                 </span>
               </div>
               <div className="flex justify-center items-center gap-10 mt-5 pt-4">
-                <img
-                  src={social_platform}
-                  alt="social platform"
-                  className="h-6 w-6 md:h-10 md:w-10"
-                />
-                <img
-                  src={githubLogo}
-                  alt="github link"
-                  className="h-6 w-6 md:h-10 md:w-10"
-                />
+                <a
+                  href="https://www.linkedin.com/in/modak-suman"
+                  target="_blank"
+                >
+                  <img
+                    src={social_platform}
+                    alt="social platform"
+                    className="h-6 w-6 md:h-10 md:w-10"
+                  />
+                </a>
+                <a href="https://github.com/suman313" target="_blank">
+                  <img
+                    src={githubLogo}
+                    alt="github link"
+                    className="h-6 w-6 md:h-10 md:w-10"
+                  />
+                </a>
               </div>
             </div>
           </div>
