@@ -4,7 +4,7 @@ import developerImg from "../assets/developer-img.jpg";
 import hand_wave from "../assets/waving_hand_.svg";
 import location_indicator from "../assets/location indicator red_.svg";
 import social_platform from "../assets/social_linkedin_.svg";
-import github from "../assets/Github_.png";
+import githubLogo from "../assets/LogoOfGitHub.png";
 import htmlLogo from "../assets/html_logo.svg";
 import reactLogo from "../assets/react_logo.svg";
 import javascriptLogo from "../assets/javascript_logo.svg";
@@ -62,7 +62,7 @@ function Home() {
                   className="h-6 w-6 md:h-10 md:w-10"
                 />
                 <img
-                  src={github}
+                  src={githubLogo}
                   alt="github link"
                   className="h-6 w-6 md:h-10 md:w-10"
                 />
