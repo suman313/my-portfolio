@@ -1,0 +1,7 @@
+nav.sticky {
+  background-color: rgb(68, 68, 71);
+}
+
+nav.sticky ul li {
+  color: white;
+}
