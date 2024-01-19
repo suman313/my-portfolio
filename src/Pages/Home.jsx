@@ -4,7 +4,7 @@ import developerImg from "../assets/developer-img.jpg";
 import hand_wave from "../assets/waving_hand_.svg";
 import location_indicator from "../assets/location indicator red_.svg";
 import social_platform from "../assets/social_linkedin_.svg";
-// import githubLogo from "../assets/LogoOfGitHub.png";
+import githubLogo from "../assets/logoOfGithub.svg";
 import htmlLogo from "../assets/html_logo.svg";
 import reactLogo from "../assets/react_logo.svg";
 import javascriptLogo from "../assets/javascript_logo.svg";
@@ -55,7 +55,7 @@ function Home() {
                   />
                 </span>
               </div>
-              {/* <div className="flex justify-center items-center gap-10 mt-5 pt-4">
+              <div className="flex justify-center items-center gap-10 mt-5 pt-4">
                 <img
                   src={social_platform}
                   alt="social platform"
@@ -66,7 +66,7 @@ function Home() {
                   alt="github link"
                   className="h-6 w-6 md:h-10 md:w-10"
                 />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
