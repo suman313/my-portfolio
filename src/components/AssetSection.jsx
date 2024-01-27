@@ -34,7 +34,7 @@ function AssetSection() {
   }, []);
   return (
     <div
-      className="asset-section grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-2 py-10 my-20  px-5"
+      className="asset-section grid grid-cols-1 gap-6 md:gap-2 md:grid-cols-2 my-5 md:my-10 px-5"
       ref={sectionRef}
     >
       <div className="flex flex-col justify-center items-center gap-10">
@@ -81,10 +81,10 @@ function AssetSection() {
             <ImageContent imgSrc={operators} />
           </div>
         </div>
-        <div className="flex w-full justify-between px-5 gap-2 overflow-scroll md:overflow-auto md:gap-0">
+        <div className="flex w-full justify-between px-5 gap-2 md:gap-2 overflow-scroll md:overflow-auto  text-sm md:text-lg lg:text-xl">
           <button
             onClick={() => setVisibleSection(0)}
-            className={`shadow-lg  text-[1.075rem] px-6 rounded-lg ${
+            className={`shadow-lg   px-6 rounded-lg ${
               visibleSection == 0
                 ? "bg-slate-100 text-[#151414] "
                 : "bg-[#292727] text-[#b2e0b5]"
@@ -94,7 +94,7 @@ function AssetSection() {
           </button>
           <button
             onClick={() => setVisibleSection(1)}
-            className={`shadow-lg  text-[1.075rem] px-6 rounded-lg ${
+            className={`shadow-lg   px-6 rounded-lg ${
               visibleSection == 1
                 ? "bg-slate-100 text-[#151414] "
                 : "bg-[#292727] text-[#b2e0b5]"
@@ -104,7 +104,7 @@ function AssetSection() {
           </button>
           <button
             onClick={() => setVisibleSection(2)}
-            className={`shadow-lg  text-[1.075rem] px-6 rounded-lg ${
+            className={`shadow-lg   px-6 rounded-lg ${
               visibleSection == 2
                 ? "bg-slate-100 text-[#151414] "
                 : "bg-[#292727] text-[#b2e0b5]"
@@ -114,7 +114,7 @@ function AssetSection() {
           </button>
           <button
             onClick={() => setVisibleSection(3)}
-            className={`shadow-lg  text-[1.075rem] px-6 rounded-lg ${
+            className={`shadow-lg   px-6 rounded-lg ${
               visibleSection == 3
                 ? "bg-slate-100 text-[#151414] "
                 : "bg-[#292727] text-[#b2e0b5]"
@@ -124,7 +124,7 @@ function AssetSection() {
           </button>
           <button
             onClick={() => setVisibleSection(4)}
-            className={`shadow-lg  text-[1.075rem] px-6 rounded-lg ${
+            className={`shadow-lg   px-6 rounded-lg ${
               visibleSection == 4
                 ? "bg-slate-100 text-[#151414] "
                 : "bg-[#292727] text-[#b2e0b5]"
@@ -136,16 +136,16 @@ function AssetSection() {
       </div>
 
       <div className=" flex flex-col justify-start md:justify-center items-center md:mx-[3rem]  bg-[#fff] rounded-lg font-serif py-5">
-        <p className="text-[1.9rem] md:text-[2.5rem]">
+        <p className="text-[1.3rem] md:text-[2.5rem]">
           {assetInfos[visibleSection].heading}
         </p>
-        <p className="text-[1rem] md:text-[1.2rem] text-[#282a28] p-5 md:p-10">
+        <p className="text-[0.7rem] md:text-[1.2rem] text-[#282a28] p-5 md:p-10">
           {assetInfos[visibleSection].description}
           {/* <button className="md:hidden m-2 md:m-0 font-[400] text-lg bg-[#4240b1] px-4 text-white rounded-md">
             See more
           </button> */}
         </p>
-        <button className=" font-[400] text-lg bg-[#4240b1] px-4 text-white rounded-md">
+        <button className=" font-[400] text-sm md:text-lg lg:text-xl bg-[#4240b1] px-4 text-white rounded-md">
           <a href={videoLinks[visibleSection]} target="_blank">
             see more
           </a>

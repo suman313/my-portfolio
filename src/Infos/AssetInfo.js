@@ -1,6 +1,6 @@
 export const assetInfos = [
   {
-    heading: "Asset Tracker",
+    heading: "Overview",
     description:
       "A fully customized inventory cum operator management softwar application. It helps to keep track of the mining activities by providing the ability to monitor live events at the mining centers.",
   },

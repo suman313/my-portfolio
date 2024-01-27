@@ -9,12 +9,12 @@
   color: #ffffff;
   display: flex;
   font-family: Phantomsans, sans-serif;
-  font-size: 1rem;
+  font-size: 0.7rem;
   justify-content: center;
   line-height: 1em;
   /* max-width: 100%;
   min-width: 1rem; */
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
@@ -32,5 +32,6 @@
   .button-stack {
     font-size: 0.85rem;
     min-width: 1rem;
+    padding: 0.5rem 1rem;
   }
 }

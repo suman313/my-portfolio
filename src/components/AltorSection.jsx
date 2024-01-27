@@ -20,17 +20,17 @@ function AltorSection() {
   ];
   return (
     <div
-      className="section grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0   pb-10 transition-all my-20 px-5"
+      className="section grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0  transition-all mb-5 md:mb-10 px-5"
       id="section"
     >
       <div className="order-last md:order-none flex  flex-col justify-start md:justify-center items-center md:mx-[3rem]  bg-[#fff] rounded-lg font-serif py-5">
         <p className="text-[1.5rem] md:text-[2.5rem]">
           {altorInfo[visibleSection].heading}
         </p>
-        <p className="text-[1rem] md:text-[1.2rem] text-[#676262] p-4 pt-1  md:p-10">
+        <p className="text-[0.7rem] md:text-[1.2rem] text-[#676262] p-4 pt-1  md:p-10">
           {altorInfo[visibleSection].description}
         </p>
-        <button className="font-[400] text-lg bg-[#4240b1] px-4 text-white rounded-md">
+        <button className="font-[400] text-sm md:text-lg lg:text-xl bg-[#4240b1] px-4 text-white rounded-md">
           <a href="https://youtu.be/ly0QqF4qs_4" target="_blank">
             See more
           </a>
@@ -95,12 +95,12 @@ function AltorSection() {
           </div>
         </div>
 
-        <div className="flex w-full justify-between px-5 overflow-scroll md:overflow-auto">
+        <div className="flex w-full justify-between  overflow-scroll md:overflow-auto text-sm md:text-lg lg:text-xl gap-2 md:gap-0">
           {sections.map((item, index) => (
             <>
               <button
                 onClick={() => setVisibleSection(index)}
-                className={`shadow-lg  text-[1.075rem] px-6 rounded-lg whitespace-nowrap ${
+                className={`shadow-lg   px-6 rounded-lg whitespace-nowrap ${
                   visibleSection == index
                     ? "bg-slate-100 text-[#151414] "
                     : "bg-[#292727] text-[#b2e0b5]"

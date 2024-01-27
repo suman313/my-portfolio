@@ -23,40 +23,38 @@ function Contact() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-[100vh] bg-[#1d1c1c] text-white">
-      <p className="text-[2rem] mb-4">Contact Me</p>
+    <div className="flex flex-col justify-center items-center h-[100vh] bg-[#1d1c1c] text-white w-full">
+      <p className="text-[1.28rem] md:text-[2rem] mb-4">Contact Me</p>
       <div className="flex flex-col gap-5 justify-center items-start">
         <label>Your Name</label>
         <input
           type="text"
           placeholder="your name"
-          className="border-[2px] p-2 rounded-md w-full"
+          className="border-[2px] p-2 rounded-md w-fit md:w-full text-black"
           onChange={(e) => setMailData({ ...mailData, name: e.target.value })}
         />
         <label>Email Id</label>
         <input
           type="text"
           placeholder="email id"
-          className="border-[2px] p-2 rounded-md w-full"
+          className="border-[2px] p-2 rounded-md w-fit md:w-full text-black"
           onChange={(e) => setMailData({ ...mailData, email: e.target.value })}
         />
         <label>Phone no.</label>
         <input
           type="text"
           placeholder="phone no."
-          className="border-[2px] p-2 rounded-md w-full"
+          className="border-[2px] p-2 rounded-md w-fit md:w-full text-black"
           onChange={(e) =>
             setMailData({ ...mailData, phone_no: e.target.value })
           }
         />
         <label>How can I help you?</label>
         <textarea
-          className="border-[2px] p-2 rounded-md"
+          className="border-[2px] p-2 rounded-md text-black w-[200px] md:w-[400px]"
           onChange={(e) =>
             setMailData({ ...mailData, message: e.target.value })
           }
-          rows="4"
-          cols="50"
         ></textarea>
         <button
           className="p-2 bg-[#d03f3f] rounded-md w-[80px] text-white"

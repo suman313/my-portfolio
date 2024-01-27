@@ -19,7 +19,7 @@ import Contact from "../components/Contact";
 function Home() {
   return (
     <Layout>
-      <section className="flex flex-col h-[80vh] justify-between">
+      <section className="flex flex-col  justify-around">
         <div className="developer-info-section flex flex-col md:flex-row justify-center items-center gap-10">
           {/* <div className="developer-img "> */}
           <img
@@ -30,19 +30,19 @@ function Home() {
           />
           {/* </div> */}
           <div className="developer-description flex flex-col justify-between md:self-start  ">
-            <div className="developer-desc-heading  mb-5 flex justify-center items-center gap-5">
-              <p className="text-[#464444] text-[1.5rem] md:text-[3.5rem] font-[400]">
+            <div className="developer-desc-heading flex justify-center items-center gap-5">
+              <p className="text-[#464444] text-[1.2rem] md:text-[2.1rem] lg:text-[3.5rem] font-[400] ">
                 Full Stack Developer
               </p>
               <span>
                 <img
                   src={hand_wave}
                   alt="hand wave"
-                  className="w-[2.5rem] h-[2.5rem]"
+                  className="w-[1.3rem] h-[1.3rem] md:w-[1.9rem] md:h-[1.9rem] lg:w-[2.5rem] lg:h-[2.5rem]"
                 />
               </span>
             </div>
-            <div className="developer-desc text-[#A09494] text-[1.25rem] font-[300] text-center">
+            <div className="developer-desc text-[#A09494] text-[0.8rem] md:text-[1.25rem] font-[300] text-center">
               <p className="">Hi, I am Suman Modak. A passionate</p>
               <p>web application developer located at</p>
               <div className="flex justify-center items-center gap-2 ">
@@ -51,11 +51,11 @@ function Home() {
                   <img
                     src={location_indicator}
                     alt="location indicator"
-                    className="w-[2rem] h-[2rem]"
+                    className="w-[1.3rem] h-[1.3rem] md:w-[1.9rem] md:h-[1.9rem] lg:w-[2.5rem] lg:h-[2.5rem]"
                   />
                 </span>
               </div>
-              <div className="flex justify-center items-center gap-10 mt-5 pt-4">
+              <div className="flex justify-center items-center gap-3  md:gap-10 py-[0.8rem]  md:py-[2rem]">
                 <a
                   href="https://www.linkedin.com/in/modak-suman"
                   target="_blank"
@@ -77,7 +77,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" tech-stack-info flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 my-[2rem] ">
+        <div className=" tech-stack-info flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 my-[0.8rem] md:my-[2rem] ">
           <div className="text-[#A09494] font-normal text-[0.8rem] md:text-[1.95rem] md:ml-24  whitespace-nowrap ">
             Tech Stack
           </div>
@@ -120,12 +120,27 @@ function Home() {
         className="flex flex-col justify-center items-center gap-6 md:gap-0 bg-[#d7d0d0] pt-6 border-2 border-[#bebaba]"
         id="section-asset"
       >
-        <p className="text-[1.95rem] md:text-[2.95rem]  font-extralight text-[#464444]">
-          Projects
+        <p className="text-[1.95rem] md:text-[2.95rem]  font-extralight text-[#464444] border-b-2 border-b-[#e14949]">
+          My Projects
         </p>
-        <AssetSection />
-        <AltorSection />
-        <Wokplace />
+        <div className="flex flex-col py-5 my-5 md:py-10 md:my-20  px-5 gap-4 md:gap-8">
+          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d5327]">
+            Asset Tracker
+          </div>
+          <AssetSection />
+        </div>
+        <div className="flex flex-col pb-5 mb-5 md:pb-10 md:mb-20  px-5 gap-4 md:gap-8">
+          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d5327] pb-2">
+            Smart Helmet
+          </div>
+          <AltorSection />
+        </div>
+        <div className="flex flex-col pb-5 mb-5 md:pb-10 md:mb-20  px-5 gap-4 md:gap-8">
+          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d5327] pb-2">
+            Wokplace
+          </div>
+          <Wokplace />
+        </div>
       </section>
       <About />
       <Contact />
