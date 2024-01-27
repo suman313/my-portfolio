@@ -150,7 +150,7 @@ function AssetSection() {
             see more
           </a>
         </button>
-        <div className=" flex w-full gap-2  py-5 md:p-10 overflow-scroll md:overflow-auto">
+        <div className=" flex w-full gap-2  py-5 px-3 md:p-10 overflow-scroll md:overflow-auto">
           <ButtonStack content="React Js" />
           <ButtonStack content="Tailwind Css" />
           <ButtonStack content="Web Socket" />

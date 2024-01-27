@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./layout.css";
 import hamburgerIcon from "../assets/hamburgerMenu.svg";
 import crossIcon from "../assets/crossIcon.svg";
+import logo from "../assets/logo.svg";
 function Layout({ children }) {
   const [hamburMenuState, setHamburMenuState] = useState(false);
 
@@ -26,7 +27,8 @@ function Layout({ children }) {
   };
   return (
     <>
-      <nav className="hidden  top-0 left-0 md:flex justify-between items-center w-full p-5 transition z-[999]">
+      <nav className="hidden top-0 left-0 md:flex justify-between items-center w-full p-5 transition z-[999]">
+        <img src={logo} alt="logo" className="w-[60px] h-[50px] ml-10" />
         <ul className="flex justify-end w-full gap-8 pr-5">
           <li>
             <button onClick={scrollToTop}>Home</button>
@@ -41,10 +43,11 @@ function Layout({ children }) {
         </ul>
       </nav>
       <nav className=" md:hidden">
+        <img src={logo} alt="logo" className="w-[50px] h-[50px] p-2 ml-5" />
         <img
           src={hamburMenuState ? crossIcon : hamburgerIcon}
           alt="hamburgerIcon"
-          className="absolute top-0 right-0 w-16 h-16"
+          className="absolute top-0 right-0 w-10 h-10"
           onClick={() => setHamburMenuState((prev) => !prev)}
         />
         <div
