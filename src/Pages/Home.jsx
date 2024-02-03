@@ -134,14 +134,20 @@ function Home() {
             Asset Tracker
           </p>
           {/* <AssetSection /> */}
-          <AssetSectionRevised Info={assetInfos} />
+          <AssetSectionRevised
+            Info={assetInfos}
+            GitHubLink="https://github.com/suman313/asset-tracker-front"
+          />
         </div>
         <div className="flex flex-col pb-5 mb-5 md:pb-10 md:mb-20  px-5 gap-4 md:gap-8">
           <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d154b] font-[900] pb-2 uppercase">
             Smart Helmet
           </div>
           {/* <AltorSection /> */}
-          <AssetSectionRevised Info={altorInfo} />
+          <AssetSectionRevised
+            Info={altorInfo}
+            GitHubLink="https://github.com/suman313/Altor-dashboard"
+          />
         </div>
         <div className="flex flex-col pb-5 mb-5 md:pb-10 md:mb-20  px-5 gap-4 md:gap-8">
           <div className="text-[1rem] md:text-[1.75rem] flex justify-center items-center text-[#1d154b] font-[900] pb-2">

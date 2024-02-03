@@ -22,13 +22,13 @@ function Wokplace() {
           your device and never leaves your device. This is not a replacement of
           your usual chat application.
         </p>
-        <div className="flex justify-between gap-2">
-          <button className="font-[400] text-sm md:text-lg lg:text:xl bg-[#ce1a1a] px-4 text-white rounded-md">
+        <div className="flex justify-center items-center gap-2">
+          <button className="font-[400] text-sm md:text-lg lg:text:xl bg-[#ce1a1a] px-4 py-2 text-white rounded-md">
             <a href="https://chat-e2ee-2.azurewebsites.net" target="_blank">
               Live Demo
             </a>
           </button>
-          <button className="font-[400] text-sm md:text-lg lg:text:xl bg-[#454343] px-4 text-white rounded-md">
+          <button className="font-[400] text-sm md:text-lg lg:text:xl bg-[#454343] px-4 py-2 text-white rounded-md">
             <a
               href="https://github.com/muke1908/chat-e2ee?tab=readme-ov-file"
               target="_blank"

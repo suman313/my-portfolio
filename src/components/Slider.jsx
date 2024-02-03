@@ -1,6 +1,14 @@
 import React from "react";
 import "./slider.css";
-function Slider({ image, heading, description, link, index, lengthOfSlider }) {
+function Slider({
+  image,
+  heading,
+  description,
+  link,
+  index,
+  lengthOfSlider,
+  GitHubLink,
+}) {
   return (
     <div
       className={` container-${index} grid gap-2 md:grid-cols-2 md:gap-6 py-4  md:py-10 px-5  w-[90vw] `}
@@ -19,11 +27,18 @@ function Slider({ image, heading, description, link, index, lengthOfSlider }) {
         <p className="text-white text-sm md:text-xl text-left font-extrabold font-serif">
           {description}
         </p>
-        <button className=" font-[400] text-sm md:text-lg lg:text-xl bg-[#ce1a1a] px-4 text-white rounded-md">
-          <a href={link} target="_blank">
-            see more
-          </a>
-        </button>
+        <div className="flex justify-center items-center gap-2">
+          <button className="w-fit place-self-center font-[400] text-sm md:text-lg lg:text-xl bg-[#ce1a1a] px-4 py-2 text-white rounded-md">
+            <a href={link} target="_blank">
+              see more
+            </a>
+          </button>
+          <button className="w-fit place-self-center font-[400] text-sm md:text-lg lg:text-xl bg-[#454343] px-4 py-2 text-white rounded-md">
+            <a href={GitHubLink} target="_blank">
+              Github Link
+            </a>
+          </button>
+        </div>
       </div>
       {lengthOfSlider.map((item) => (
         <div className={`slide-indicator-${index} `}></div>

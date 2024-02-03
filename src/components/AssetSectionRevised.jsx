@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./asset.css";
 import Slider from "./Slider";
 
-function AssetSectionRevised({ Info }) {
+function AssetSectionRevised({ Info, GitHubLink }) {
   const imgContainerRef = useRef();
   const backBtnRef = useRef();
   const forwardBtnRef = useRef();
@@ -81,6 +81,7 @@ function AssetSectionRevised({ Info }) {
             heading={item.heading}
             description={item.description}
             link={item.link}
+            GitHubLink={GitHubLink}
             lengthOfSlider={Info}
           />
         ))}
