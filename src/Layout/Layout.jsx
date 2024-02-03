@@ -28,7 +28,7 @@ function Layout({ children }) {
   return (
     <>
       <nav className="hidden top-0 left-0 md:flex justify-between items-center w-full p-5 transition z-[999]">
-        <img src={logo} alt="logo" className="w-[60px] h-[50px] ml-10" />
+        <img src={logo} alt="logo" className="w-[70px] h-[30px] ml-10" />
         <ul className="flex justify-end w-full gap-8 pr-5">
           <li>
             <button onClick={scrollToTop}>Home</button>

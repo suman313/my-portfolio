@@ -57,7 +57,7 @@ function Contact() {
           }
         ></textarea>
         <button
-          className="p-2 bg-[#d03f3f] rounded-md w-[80px] text-white"
+          className="p-2 bg-[#d03f3f] rounded-md w-[80px] text-white self-center"
           onClick={sendEmail}
         >
           Send

@@ -16,6 +16,11 @@ import AltorSection from "../components/AltorSection";
 import Wokplace from "../components/Wokplace";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Slider from "../components/Slider";
+import AssetSectionRevised from "../components/AssetSectionRevised";
+import { assetInfos } from "../Infos/AssetInfo";
+import { altorInfo } from "../Infos/AltorInfo";
+
 function Home() {
   return (
     <Layout>
@@ -116,28 +121,31 @@ function Home() {
           </div>
         </div>
       </section>
+      {/* projects */}
       <section
-        className="flex flex-col justify-center items-center gap-6 md:gap-0 bg-[#d7d0d0] pt-6 border-2 border-[#bebaba]"
+        className="flex flex-col justify-center items-center gap-6 md:gap-0 bg-[#ecf1ff] pt-6 border-2 border-[#bebaba]"
         id="section-asset"
       >
-        <p className="text-[1.95rem] md:text-[2.95rem]  font-extralight text-[#464444] border-b-2 border-b-[#e14949]">
+        <p className="text-[1.15rem] md:text-[2.15rem]  font-[700] text-[#e51c73] uppercase ">
           My Projects
         </p>
         <div className="flex flex-col py-5 my-5 md:py-10 md:my-20  px-5 gap-4 md:gap-8">
-          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d5327]">
+          <p className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d154b] font-[900] uppercase">
             Asset Tracker
-          </div>
-          <AssetSection />
+          </p>
+          {/* <AssetSection /> */}
+          <AssetSectionRevised Info={assetInfos} />
         </div>
         <div className="flex flex-col pb-5 mb-5 md:pb-10 md:mb-20  px-5 gap-4 md:gap-8">
-          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d5327] pb-2">
+          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d154b] font-[900] pb-2 uppercase">
             Smart Helmet
           </div>
-          <AltorSection />
+          {/* <AltorSection /> */}
+          <AssetSectionRevised Info={altorInfo} />
         </div>
         <div className="flex flex-col pb-5 mb-5 md:pb-10 md:mb-20  px-5 gap-4 md:gap-8">
-          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d5327] pb-2">
-            Wokplace
+          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d154b] font-[900] pb-2">
+            Chat-E2EE (Open source contribution)
           </div>
           <Wokplace />
         </div>
