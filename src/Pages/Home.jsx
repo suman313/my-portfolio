@@ -144,7 +144,7 @@ function Home() {
           <AssetSectionRevised Info={altorInfo} />
         </div>
         <div className="flex flex-col pb-5 mb-5 md:pb-10 md:mb-20  px-5 gap-4 md:gap-8">
-          <div className="text-[1.3rem] md:text-[2.5rem] flex justify-center items-center text-[#1d154b] font-[900] pb-2">
+          <div className="text-[1rem] md:text-[1.75rem] flex justify-center items-center text-[#1d154b] font-[900] pb-2">
             Chat-E2EE (Open source contribution)
           </div>
           <Wokplace />

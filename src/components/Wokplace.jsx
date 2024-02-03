@@ -2,7 +2,7 @@ import React from "react";
 import "./slider.css";
 function Wokplace() {
   return (
-    <div className=" container-0 grid md:grid-cols-2 md:gap-6 md:py-10 px-5  w-[90vw] rounded-[20px] ">
+    <div className="container-0 grid grid-rows-[auto] gap-4 md:grid-cols-2  md:gap-6 py-4 md:py-10 px-5  w-[90vw] rounded-[20px] ">
       <div className="flex justify-center items-center">
         <img
           src="https://camo.githubusercontent.com/452890c129355f9bb2202d3de81d474e2986da18bfa8ffa7ab09319398779671/68747470733a2f2f692e696d6775722e636f6d2f32477242514d7a2e6a7067"
@@ -10,9 +10,11 @@ function Wokplace() {
           className="md:w-[50rem] md:h-[25rem] border-[0.72rem] rounded-[20px] cursor-pointer"
         />
       </div>
-      <div className="desc-container flex flex-col justify-around items-center px-4">
-        <p className="text-[#f4f2f2a3] text-2xl font-extrabold">Overview</p>
-        <p className="text-white text-xl text-left font-extrabold font-serif">
+      <div className="desc-container grid grid-rows-[auto] gap-4 px-4">
+        <p className="grid text-center text-[#f4f2f2a3] text-base md:text-2xl font-extrabold">
+          Overview
+        </p>
+        <p className="text-white text-sm md:text-xl text-left font-extrabold font-serif">
           Disposable chat session: this app will allow two mutually agreed users
           to have a chat in end-to-end encrypted environment. The app itself
           doesn't track you or ask any infromation from you. Data is owned by
