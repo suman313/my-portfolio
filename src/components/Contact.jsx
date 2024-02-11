@@ -78,17 +78,17 @@ function Contact() {
           <img
             src={instalogo}
             alt="instalogo"
-            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4"
+            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
           />
           <img
             src={fblogo}
             alt="fblogo"
-            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4"
+            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
           />
           <img
             src={linkedinlogo}
             alt="linkedinglogo"
-            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4"
+            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
           />
         </div>
       </div>
