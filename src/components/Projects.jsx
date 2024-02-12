@@ -20,7 +20,9 @@ function Projects() {
             Asset Tracker
           </p>
           <span className="border-[2px] border-[#fff] rounded-full p-2 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
-            <img src={forwardlogo} alt="forward Logo" className="w-16" />
+            <a href="https://www.durbin.live/assetTrackr.html" target="_blank">
+              <img src={forwardlogo} alt="forward Logo" className="w-16" />
+            </a>
           </span>
         </div>
       </div>
@@ -30,7 +32,9 @@ function Projects() {
             Chat E2EE
           </p>
           <span className="border-[2px] border-[#fff] rounded-full p-2 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
-            <img src={forwardlogo} alt="forward Logo" className="w-16" />
+            <a href="https://chat-e2ee-2.azurewebsites.net/" target="_blank">
+              <img src={forwardlogo} alt="forward Logo" className="w-16" />
+            </a>
           </span>
         </div>
         <div className="relative project-container cursor-pointer">
@@ -60,7 +64,9 @@ function Projects() {
             Smart Helmet
           </p>
           <span className="border-[2px] border-[#fff] rounded-full p-2 cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
-            <img src={forwardlogo} alt="forward Logo" className="w-16" />
+            <a href="https://business.altor.tech/" target="_blank">
+              <img src={forwardlogo} alt="forward Logo" className="w-16" />
+            </a>
           </span>
         </div>
       </div>

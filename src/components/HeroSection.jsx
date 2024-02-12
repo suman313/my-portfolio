@@ -19,21 +19,30 @@ function HeroSection() {
           I build things for the web
         </p>
         <div className="flex justify-start gap-4">
-          <img
-            src={githublogo}
-            alt="git-hub"
-            className="w-10 h-10 cursor-pointer"
-          />
-          <img
-            src={linkedinglogo}
-            alt="instagram"
-            className="w-10 h-10 cursor-pointer"
-          />
-          <img
-            src={instalogo}
-            alt="linkeding"
-            className="w-10 h-10 cursor-pointer"
-          />
+          <a href="https://github.com/suman313" target="_blank">
+            <img
+              src={githublogo}
+              alt="git-hub"
+              className="w-10 h-10 cursor-pointer"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/modak-suman" target="_blank">
+            <img
+              src={linkedinglogo}
+              alt="instagram"
+              className="w-10 h-10 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/modakcr7?igsh=Z3g2dnI1b3Z1cjd6"
+            target="_blank"
+          >
+            <img
+              src={instalogo}
+              alt="linkeding"
+              className="w-10 h-10 cursor-pointer"
+            />
+          </a>
         </div>
       </div>
       <div className="img-section">

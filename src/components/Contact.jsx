@@ -75,21 +75,33 @@ function Contact() {
           <button className="text-2xl font-medium text-white">Send</button>
         </div>
         <div className="flex justify-center items-center gap-4">
-          <img
-            src={instalogo}
-            alt="instalogo"
-            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
-          />
-          <img
-            src={fblogo}
-            alt="fblogo"
-            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
-          />
-          <img
-            src={linkedinlogo}
-            alt="linkedinglogo"
-            className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
-          />
+          <a
+            href="https://www.instagram.com/modakcr7?igsh=Z3g2dnI1b3Z1cjd6"
+            target="_blank"
+          >
+            <img
+              src={instalogo}
+              alt="instalogo"
+              className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/suman.modak.35?sfnsn=wiwspwa&mibextid=2JQ9oc"
+            target="_blank"
+          >
+            <img
+              src={fblogo}
+              alt="fblogo"
+              className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/modak-suman" target="_blank">
+            <img
+              src={linkedinlogo}
+              alt="linkedinglogo"
+              className="w-[4vw] border-[1px] border-[#331C52] rounded-full p-4 cursor-pointer"
+            />
+          </a>
         </div>
       </div>
     </div>
