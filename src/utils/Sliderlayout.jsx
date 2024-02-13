@@ -66,7 +66,7 @@ function Sliderlayout({ allImgaes }) {
         className="asset-container flex my-[10rem] "
       >
         {allImgaes.map((item) => (
-          <img src={item} className="w-auto h-[40rem] px-16" />
+          <img src={item} />
         ))}
       </div>
     </div>

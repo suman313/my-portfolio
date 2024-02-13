@@ -6,8 +6,12 @@ import viewIcon from "../assets/view.svg";
 import "./project.css";
 import { createPortal } from "react-dom";
 import Assetmodal from "./imgModals/Assetmodal";
+import Altormodal from "./imgModals/Altormodal";
+import Chate2eemodal from "./imgModals/chate2eemodal";
 function Projects() {
   const [openAssetModal, setOpenAssetModal] = useState(false);
+  const [openAltorModal, setOpenAltorModal] = useState(false);
+  const [openChatModal, setOpenChatModal] = useState(false);
   return (
     <>
       <div className="bg-[#291C3A] py-10">
@@ -68,7 +72,7 @@ function Projects() {
                 src={viewIcon}
                 alt="viewIcon"
                 className="w-20"
-                onClick={() => setOpenModal(true)}
+                onClick={() => setOpenChatModal(true)}
               />
             </div>
           </div>
@@ -85,7 +89,7 @@ function Projects() {
                 src={viewIcon}
                 alt="viewIcon"
                 className="w-20"
-                onClick={() => setOpenModal(true)}
+                onClick={() => setOpenAltorModal(true)}
               />
             </div>
           </div>
@@ -104,6 +108,16 @@ function Projects() {
       {openAssetModal &&
         createPortal(
           <Assetmodal open={openAssetModal} setModal={setOpenAssetModal} />,
+          document.body
+        )}
+      {openAltorModal &&
+        createPortal(
+          <Altormodal open={openAltorModal} setModal={setOpenAltorModal} />,
+          document.body
+        )}
+      {openChatModal &&
+        createPortal(
+          <Chate2eemodal open={openChatModal} setModal={setOpenChatModal} />,
           document.body
         )}
     </>
