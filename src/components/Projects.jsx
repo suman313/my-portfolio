@@ -7,7 +7,7 @@ import "./project.css";
 import { createPortal } from "react-dom";
 import Assetmodal from "./imgModals/Assetmodal";
 import Altormodal from "./imgModals/Altormodal";
-import Chate2eemodal from "./imgModals/chate2eemodal";
+import Chatmodal from "./imgModals/Chatmodal";
 function Projects() {
   const [openAssetModal, setOpenAssetModal] = useState(false);
   const [openAltorModal, setOpenAltorModal] = useState(false);
@@ -117,7 +117,7 @@ function Projects() {
         )}
       {openChatModal &&
         createPortal(
-          <Chate2eemodal open={openChatModal} setModal={setOpenChatModal} />,
+          <Chatmodal open={openChatModal} setModal={setOpenChatModal} />,
           document.body
         )}
     </>

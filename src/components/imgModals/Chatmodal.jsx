@@ -2,7 +2,7 @@ import React from "react";
 import Slideformodal from "../Slideformodal";
 import Sliderlayout from "../../utils/Sliderlayout";
 import home from "../../assets/ChatE2EE/home.svg";
-function Chate2eemodal({ open, setModal }) {
+function Chatmodal({ open, setModal }) {
   const allImgaes = [home];
 
   return (
@@ -12,4 +12,4 @@ function Chate2eemodal({ open, setModal }) {
   );
 }
 
-export default Chate2eemodal;
+export default Chatmodal;
