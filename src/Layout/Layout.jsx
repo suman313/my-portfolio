@@ -8,7 +8,7 @@ function Layout({ children }) {
 
   window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
-    nav.classList.toggle("sticky", this.window.scrollY > 0);
+    nav.classList.toggle("sticky", this.window.scrollY > 700);
   });
   const scrollToTop = () => {
     document.body.scrollIntoView({
@@ -17,29 +17,34 @@ function Layout({ children }) {
       inline: "nearest",
     });
   };
-  const scrollToProjects = () => {
-    let section = document.getElementById("section-asset");
-    section.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionName) => {
+    let section = document.getElementById(sectionName);
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   };
-  const scrollToAbout = () => {
-    let section = document.getElementById("section-about");
-    section.scrollIntoView({ behavior: "smooth" });
-  };
+
   return (
-    <>
-      <nav className="nav-section hidden top-0 left-0 md:flex justify-between items-center w-full p-5 transition z-[999]">
+    <div>
+      <nav className="nav-section hidden top-0 left-0 md:flex justify-between items-center w-full p-5 transition z-[500]">
         <img src={logo} alt="logo" className="w-[70px] h-[30px] ml-10" />
         <ul className="flex justify-end w-full gap-8 pr-5">
           <li>
             <button onClick={scrollToTop}>Home</button>
           </li>
           <li>
-            <button onClick={scrollToProjects}>Projects</button>
+            <button onClick={() => scrollToSection("projects")}>
+              Projects
+            </button>
           </li>
           <li>
-            <button onClick={scrollToAbout}>About</button>
+            <button onClick={() => scrollToSection("about")}>About</button>
           </li>
-          <li>Contact</li>
+          <li>
+            <button onClick={() => scrollToSection("contact")}>Contact</button>
+          </li>
         </ul>
       </nav>
       <nav className=" md:hidden">
@@ -60,17 +65,23 @@ function Layout({ children }) {
               <button onClick={scrollToTop}>Home</button>
             </li>
             <li>
-              <button onClick={scrollToProjects}>Projects</button>
+              <button onClick={() => scrollToSection("projects")}>
+                Projects
+              </button>
             </li>
             <li>
-              <button onClick={scrollToAbout}>About</button>
+              <button onClick={() => scrollToSection("about")}>About</button>
             </li>
-            <li>Contact</li>
+            <li>
+              <button onClick={() => scrollToSection("contact")}>
+                Contact
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
       <main>{children}</main>
-    </>
+    </div>
   );
 }
 

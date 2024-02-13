@@ -1,0 +1,12 @@
+.asset-container {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.asset-container > div {
+  text-align: center;
+  scroll-snap-align: start;
+  flex: none;
+}
+.asset-container::-webkit-scrollbar {
+  display: none;
+}
