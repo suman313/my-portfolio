@@ -6,13 +6,13 @@ import instalogo from "../assets/instalogo.svg";
 import linkedinglogo from "../assets/linkedinlogo.svg";
 function HeroSection() {
   return (
-    <div className="hero-section grid grid-cols-2 ">
+    <div className="hero-section grid md:grid-cols-2 ">
       <div className="text-section flex flex-col justify-center pl-10 py-10 gap-4">
         <div className="">
           <p className="text-4xl font-bold text-white">Hello</p>
         </div>
 
-        <p className="text-[5rem] text-[#6E369B] font-bold leading-none">
+        <p className="text-[2.5rem] md:text-[5rem] text-[#6E369B] font-bold leading-none">
           I'm a web <br /> Developer
         </p>
         <p className="text-2xl font-medium text-white">
@@ -49,7 +49,7 @@ function HeroSection() {
         <img
           src={heroImg}
           alt="hero section image"
-          className="w-full h-[30rem] "
+          className="w-full md:h-[30rem] "
         />
       </div>
     </div>

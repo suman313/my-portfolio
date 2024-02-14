@@ -16,10 +16,12 @@ import nodejs from "../assets/skills/nodelogo.svg";
 
 function Skills() {
   return (
-    <div className="grid grid-cols-2 bg-[#DCCFED] justify-center justify-items-center py-10 px-5">
+    <div className="grid md:grid-cols-2 bg-[#DCCFED] justify-center justify-items-center pb-8 md:pb-10 px-5">
       <div className="about-section flex flex-col gap-2 text-[#331C52] ">
-        <p className="text-[2.2rem] font-bold">Skills</p>
-        <p className="text-xl">Technologies I have recently worked with</p>
+        <p className="text-[2.2rem] font-bold bg-red text-center">Skills</p>
+        <p className="text-sm md:text-xl">
+          Technologies I have recently worked with
+        </p>
         <div className="grid grid-cols-3 gap-4">
           <div className="rounded-lg bg-[#fff] py-2 w-[80%] ">
             <img src={htmllogo} alt="" className="w-full h-[2rem] " />
@@ -58,7 +60,7 @@ function Skills() {
             />
           </div>
         </div>
-        <p className="text-xl">Good with</p>
+        <p className="text-sm md:text-xl">Good with</p>
         <div className="grid grid-cols-3 gap-4">
           <div className="rounded-lg bg-[#fff] py-2 w-[80%] ">
             <img src={cplus} alt="" className="w-full h-[2rem] " />
@@ -82,7 +84,7 @@ function Skills() {
           </div>
         </div>
       </div>
-      <img src={patterns} alt="" className="w-full h-[20rem]" />
+      <img src={patterns} alt="" className="hidden md:block w-full h-[20rem]" />
     </div>
   );
 }
